@@ -1,0 +1,10 @@
+Preparation:
+Open a new tab in Safari and don't navigate anywhere.
+
+Test:
+Boot.
+Enter passcode (not timed, don't video).
+Press enter to accept the passcode.
+Open Safari.
+Close Safari.
+
