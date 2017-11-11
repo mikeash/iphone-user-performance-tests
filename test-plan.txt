@@ -3,8 +3,20 @@ Open a new tab in Safari and don't navigate anywhere.
 
 Test:
 Boot.
-Enter passcode (not timed, don't video).
+Enter passcode (not timed, don't record, or edit out of the video).
 Press enter to accept the passcode.
+Open Settings.
+Close Settings.
 Open Safari.
+Tap the address bar and wait for the keyboard to appear.
 Close Safari.
-
+Press button to activate Siri.
+Say "Testing 123."
+After the response, navigate back to Springboard.
+Open Control Center.
+Open the camera.
+Take a picture.
+Tap the new picture to view it.
+Pull down on Springboard to bring up the search.
+Wait for the keyboard to appear.
+Push up to dismiss search.
