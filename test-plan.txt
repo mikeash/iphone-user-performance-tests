@@ -17,6 +17,7 @@ Open Control Center.
 Open the camera.
 Take a picture.
 Tap the new picture to view it.
+Close the camera.
 Pull down on Springboard to bring up the search.
 Wait for the keyboard to appear.
 Push up to dismiss search.
