@@ -13,6 +13,7 @@ The goal of this test is to be easy to perform while still giving a sense of the
 2. To that end, apps which might display private info (e.g. Mail, Messages) are avoided.
 3. Network access is mostly avoided, since it can differ for reasons beyond the device. The one exception to this is Siri.
 4. Times are really approximate. Don't read anything into minor differences.
+5. There is no attempt to control for hardware slowdowns (e.g. degrading flash?) versus clutter from user data versus slowdowns from new versions of iOS. It's not practical to stay on old versions of iOS for long (security fixes are important) or to refrain from generating more user data, so there's not much difference between the different reasons for slowdowns. It would be interesting to know, but it wouldn't really change much.
 
 
 ## I Want to Time My Device!
