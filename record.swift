@@ -8,26 +8,38 @@ let timePointsString = """
     Passcode screen appears
     Pressing enter to accept passcode
     Springboard appears
+    Settings tapped
     Settings finishes launching
+    Home pressed in Settings
     Springboard appears
+    Safari tapped
     Safari finishes launching
+    Address bar tapped
     The keyboard appears
+    Home pressed in Safari
     Springboard appears
+    Siri button pressed
     Siri begins listening
     Siri begins processing
     Siri displays the response
     Siri begins speaking the response
+    Home button pressed in Siri
     Springboard appears
+    Control Center summoned
     Control Center appears
+    Camera button tapped
     Camera UI appears
     Camera image appears
     Camera button pressed
     Photo is taken
     New picture tapped
     New picture appears fullscreen
+    Home button pressed in Camera
     Springboard appears
+    Swipe down on Springboard
     Search appears
     Keyboard appears
+    Swipe up on Springboard
     Springboard appears
     """
 let timePoints = timePointsString.components(separatedBy: "\n")
