@@ -5,40 +5,56 @@ import Foundation
 
 let timePointsString = """
     Pressing power button
-    Passcode screen appears
+    Passcode/lock screen appears
+    
     Pressing enter to accept passcode
     Springboard appears
+    
     Settings tapped
     Settings finishes launching
+    
     Home pressed in Settings
     Springboard appears
+    
     Safari tapped
     Safari finishes launching
+    
     Address bar tapped
     The keyboard appears
+    
     Home pressed in Safari
     Springboard appears
+    
     Siri button pressed
     Siri begins listening
+    
     Siri begins processing
     Siri displays the response
     Siri begins speaking the response
+    
     Home button pressed in Siri
     Springboard appears
+    
     Control Center summoned
     Control Center appears
+    
     Camera button tapped
     Camera UI appears
     Camera image appears
+    
     Camera button pressed
     Photo is taken
+    
     New picture tapped
     New picture appears fullscreen
+    
     Home button pressed in Camera
     Springboard appears
+    
     Swipe down on Springboard
     Search appears
     Keyboard appears
+    
     Swipe up on Springboard
     Springboard appears
     """
@@ -97,7 +113,7 @@ struct Record: Codable {
         var name: String
         var seconds: Double
     }
-    var times: [Time] = []
+    var times: [Time?] = []
 }
 
 func make(_ args: [String]) throws {
@@ -119,8 +135,12 @@ func make(_ args: [String]) throws {
     
     print("Enter the times for each point in the video. Times may be entered in seconds (including fractions), or as minutes:seconds.")
     for timePoint in timePoints {
-        let seconds = promptTime(timePoint + ": ")
-        record.times.append(Record.Time(name: timePoint, seconds: seconds))
+        if timePoint == "" {
+            record.times.append(nil)
+        } else {
+            let seconds = promptTime(timePoint + ": ")
+            record.times.append(Record.Time(name: timePoint, seconds: seconds))
+        }
     }
     
     let encoder = JSONEncoder()
@@ -148,8 +168,10 @@ func read(_ args: [String]) throws {
     }
     
     for times in zip(record.times, record.times.dropFirst()) {
-        let duration = String(times.1.seconds - times.0.seconds)
-        print("\(pad(duration + "s", to: 10)) FROM \(times.0.name) TO \(times.1.name)")
+        if let first = times.0, let second = times.1 {
+            let duration = String(second.seconds - first.seconds)
+            print("\(pad(duration + "s", to: 10)) FROM \(first.name) TO \(second.name)")
+        }
     }
 }
 

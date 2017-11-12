@@ -9,9 +9,10 @@
       "seconds" : 5
     },
     {
-      "name" : "Passcode screen appears",
+      "name" : "Passcode/lock screen appears",
       "seconds" : 65
     },
+    null,
     {
       "name" : "Pressing enter to accept passcode",
       "seconds" : 71
@@ -20,6 +21,7 @@
       "name" : "Springboard appears",
       "seconds" : 78
     },
+    null,
     {
       "name" : "Settings tapped",
       "seconds" : 84
@@ -28,6 +30,7 @@
       "name" : "Settings finishes launching",
       "seconds" : 88
     },
+    null,
     {
       "name" : "Home pressed in Settings",
       "seconds" : 89
@@ -36,6 +39,7 @@
       "name" : "Springboard appears",
       "seconds" : 93
     },
+    null,
     {
       "name" : "Safari tapped",
       "seconds" : 97
@@ -44,6 +48,7 @@
       "name" : "Safari finishes launching",
       "seconds" : 101
     },
+    null,
     {
       "name" : "Address bar tapped",
       "seconds" : 101
@@ -52,6 +57,7 @@
       "name" : "The keyboard appears",
       "seconds" : 104
     },
+    null,
     {
       "name" : "Home pressed in Safari",
       "seconds" : 107
@@ -60,6 +66,7 @@
       "name" : "Springboard appears",
       "seconds" : 107
     },
+    null,
     {
       "name" : "Siri button pressed",
       "seconds" : 109
@@ -68,6 +75,7 @@
       "name" : "Siri begins listening",
       "seconds" : 114
     },
+    null,
     {
       "name" : "Siri begins processing",
       "seconds" : 116
@@ -80,6 +88,7 @@
       "name" : "Siri begins speaking the response",
       "seconds" : 120
     },
+    null,
     {
       "name" : "Home button pressed in Siri",
       "seconds" : 127
@@ -88,6 +97,7 @@
       "name" : "Springboard appears",
       "seconds" : 127
     },
+    null,
     {
       "name" : "Control Center summoned",
       "seconds" : 130
@@ -96,6 +106,7 @@
       "name" : "Control Center appears",
       "seconds" : 131
     },
+    null,
     {
       "name" : "Camera button tapped",
       "seconds" : 132
@@ -108,6 +119,7 @@
       "name" : "Camera image appears",
       "seconds" : 133
     },
+    null,
     {
       "name" : "Camera button pressed",
       "seconds" : 136
@@ -116,6 +128,7 @@
       "name" : "Photo is taken",
       "seconds" : 137
     },
+    null,
     {
       "name" : "New picture tapped",
       "seconds" : 138
@@ -124,6 +137,7 @@
       "name" : "New picture appears fullscreen",
       "seconds" : 140
     },
+    null,
     {
       "name" : "Home button pressed in Camera",
       "seconds" : 141
@@ -132,6 +146,7 @@
       "name" : "Springboard appears",
       "seconds" : 142
     },
+    null,
     {
       "name" : "Swipe down on Springboard",
       "seconds" : 145
@@ -144,6 +159,7 @@
       "name" : "Keyboard appears",
       "seconds" : 146
     },
+    null,
     {
       "name" : "Swipe up on Springboard",
       "seconds" : 150
