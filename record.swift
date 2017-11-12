@@ -94,6 +94,15 @@ func promptTime(_ str: String) -> Double {
     }
 }
 
+func timeString(_ time: Double) -> String {
+    let s = String(time)
+    if s.hasSuffix(".0") {
+        return String(s[..<s.index(s.endIndex, offsetBy: -2)])
+    } else {
+        return s
+    }
+}
+
 struct Record: Codable {
     var videoURL: String = ""
     var device: String = ""
@@ -172,7 +181,7 @@ func read(_ args: [String]) throws {
         
         for times in zip(record.times, record.times.dropFirst()) {
             if let first = times.0, let second = times.1 {
-                let duration = String(second.seconds - first.seconds)
+                let duration = timeString(second.seconds - first.seconds)
                 print("""
                     | **From**: \(first.name)<br/>**To**: \(second.name) | \(duration)s |
                     """)
