@@ -4,7 +4,7 @@ Power off.
 
 Test:
 Boot.
-Enter passcode (not timed, don't record, or edit out of the video).
+Enter passcode (not timed, don't record, or edit out of the video - if you'll be uploading this video, wait for the last character to turn into a • before you hit enter so that you can edit the entire password out of the video).
 Press enter to accept the passcode.
 Open Settings.
 Close Settings.
