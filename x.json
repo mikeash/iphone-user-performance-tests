@@ -1,0 +1,173 @@
+{
+  "comment" : "The phone was five days old at the time of recording. It was restored from a backup of my old phone.",
+  "date" : "2017-11-12",
+  "device" : "iPhone X",
+  "iOSVersion" : "11.1.1",
+  "times" : [
+    {
+      "name" : "Pressing power button",
+      "seconds" : 4
+    },
+    {
+      "name" : "Passcode\/lock screen appears",
+      "seconds" : 29
+    },
+    null,
+    {
+      "name" : "Pressing enter to accept passcode",
+      "seconds" : 40
+    },
+    {
+      "name" : "Springboard appears",
+      "seconds" : 41
+    },
+    null,
+    {
+      "name" : "Settings tapped",
+      "seconds" : 43
+    },
+    {
+      "name" : "Settings finishes launching",
+      "seconds" : 44
+    },
+    null,
+    {
+      "name" : "Home pressed in Settings",
+      "seconds" : 46
+    },
+    {
+      "name" : "Springboard appears",
+      "seconds" : 46
+    },
+    null,
+    {
+      "name" : "Safari tapped",
+      "seconds" : 49
+    },
+    {
+      "name" : "Safari finishes launching",
+      "seconds" : 50
+    },
+    null,
+    {
+      "name" : "Address bar tapped",
+      "seconds" : 51
+    },
+    {
+      "name" : "The keyboard appears",
+      "seconds" : 52
+    },
+    null,
+    {
+      "name" : "Home pressed in Safari",
+      "seconds" : 53
+    },
+    {
+      "name" : "Springboard appears",
+      "seconds" : 53
+    },
+    null,
+    {
+      "name" : "Siri button pressed",
+      "seconds" : 58
+    },
+    {
+      "name" : "Siri begins listening",
+      "seconds" : 59
+    },
+    null,
+    {
+      "name" : "Siri begins processing",
+      "seconds" : 62
+    },
+    {
+      "name" : "Siri displays the response",
+      "seconds" : 63
+    },
+    {
+      "name" : "Siri begins speaking the response",
+      "seconds" : 63
+    },
+    null,
+    {
+      "name" : "Home button pressed in Siri",
+      "seconds" : 66
+    },
+    {
+      "name" : "Springboard appears",
+      "seconds" : 66
+    },
+    null,
+    {
+      "name" : "Control Center summoned",
+      "seconds" : 68
+    },
+    {
+      "name" : "Control Center appears",
+      "seconds" : 68
+    },
+    null,
+    {
+      "name" : "Camera button tapped",
+      "seconds" : 69
+    },
+    {
+      "name" : "Camera UI appears",
+      "seconds" : 70
+    },
+    {
+      "name" : "Camera image appears",
+      "seconds" : 70
+    },
+    null,
+    {
+      "name" : "Camera button pressed",
+      "seconds" : 72
+    },
+    {
+      "name" : "Photo is taken",
+      "seconds" : 73
+    },
+    null,
+    {
+      "name" : "New picture tapped",
+      "seconds" : 74
+    },
+    {
+      "name" : "New picture appears fullscreen",
+      "seconds" : 75
+    },
+    null,
+    {
+      "name" : "Home button pressed in Camera",
+      "seconds" : 77
+    },
+    {
+      "name" : "Springboard appears",
+      "seconds" : 77
+    },
+    null,
+    {
+      "name" : "Swipe down on Springboard",
+      "seconds" : 78
+    },
+    {
+      "name" : "Search appears",
+      "seconds" : 78
+    },
+    {
+      "name" : "Keyboard appears",
+      "seconds" : 79
+    },
+    null,
+    {
+      "name" : "Swipe up on Springboard",
+      "seconds" : 80
+    },
+    {
+      "name" : "Springboard appears",
+      "seconds" : 80
+    }
+  ],
+  "videoURL" : "https:\/\/www.youtube.com\/watch?v=jAzIGsu-ORs"
+}
