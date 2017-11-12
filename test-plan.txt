@@ -1,5 +1,6 @@
 Preparation:
 Open a new tab in Safari and don't navigate anywhere.
+Power off.
 
 Test:
 Boot.
