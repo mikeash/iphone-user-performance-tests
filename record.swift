@@ -94,14 +94,6 @@ func promptTime(_ str: String) -> Double {
     }
 }
 
-func pad(_ str: String, to: Int) -> String {
-    if str.count >= to {
-        return str
-    } else {
-        return pad(str + " ", to: to)
-    }
-}
-
 struct Record: Codable {
     var videoURL: String = ""
     var device: String = ""
@@ -151,26 +143,40 @@ func make(_ args: [String]) throws {
 }
 
 func read(_ args: [String]) throws {
-    if args.count != 1 {
-        print("usage: read [filename.json]")
+    if args.count < 1 {
+        print("usage: read <filename.json> [filenames.json...]")
         exit(1)
     }
     
-    let data = try Data(contentsOf: URL(fileURLWithPath: args[0]))
-    let decoder = JSONDecoder()
-    let record = try decoder.decode(Record.self, from: data)
-    
-    print("Device: \(record.device) running iOS \(record.iOSVersion)")
-    print("Recording date: \(record.date)")
-    print("Video URL: \(record.videoURL)")
-    if record.comment != "" {
-        print("Comment: \(record.comment)")
-    }
-    
-    for times in zip(record.times, record.times.dropFirst()) {
-        if let first = times.0, let second = times.1 {
-            let duration = String(second.seconds - first.seconds)
-            print("\(pad(duration + "s", to: 10)) FROM \(first.name) TO \(second.name)")
+    var first = true
+    for arg in args {
+        let data = try Data(contentsOf: URL(fileURLWithPath: arg))
+        let decoder = JSONDecoder()
+        let record = try decoder.decode(Record.self, from: data)
+        
+        if first {
+            first = false
+        } else {
+            print("")
+        }
+        print("**Device**: \(record.device) running iOS \(record.iOSVersion)  ")
+        print("**Recording date**: \(record.date)  ")
+        print("**Video URL**: \(record.videoURL)  ")
+        if record.comment != "" {
+            print("**Comment**: \(record.comment)  ")
+        }
+        
+        print("")
+        print("| Description | Time Taken |")
+        print("| :-- | --: |")
+        
+        for times in zip(record.times, record.times.dropFirst()) {
+            if let first = times.0, let second = times.1 {
+                let duration = String(second.seconds - first.seconds)
+                print("""
+                    | **From**: \(first.name)<br/>**To**: \(second.name) | \(duration)s |
+                    """)
+            }
         }
     }
 }
